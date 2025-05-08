@@ -5,67 +5,41 @@
 
 ---
 
+
 ## 1. Project choice
 
 - Subject : *As movies fans, we decided to create a movie recommendation system that would allow anyone to input a movie they loved and get recommendations based on it.*
 - Data used : *Lots of datasets about movies exist online. We went for a Kaggle dataset from Letterboxd because it was complete enough with few missing data and it contained many movies from all around the world.*
 
+
 ---
 
-## 2. Data preprocessing
+
+## 2. Data preprocessing and features choice
 
 We preprocessed the data very classically, using encoding, imputing, scaling, dropping columns, etc.
+For the 1st model we built, we used the movies synopsis.
+For the 2d one, we added the languages and genres.
+
 
 ---
 
-## 🧠 3. Models used
 
-- We started
+## 3. Models used
 
----
+- We started with a baseline model made using tf-idf on movies synopsis and Nearest Neighbors with a cosine similarity to retrieve recommendations.
+- Then we made a more complex model using an auto-encoder supposed to learn the main important aspects of the tf-idf data, movie genre, and movie language. So we used tf-idf, then autoencoder and finally Nearest Neighbors for that one.
 
-## 🧪 4. Évaluation
-
-- Métriques utilisées : *[RMSE, MAE, Accuracy, F1, etc.]*
-- Résultats sur le jeu de test
-- Analyse des performances
 
 ---
 
-## 🚀 5. Déploiement
 
-### 🔌 API
-- Développée avec Flask
-- Permet de faire des prédictions en temps réel via des requêtes HTTP
+## 4. Deployment
 
-### 🖼️ Interface utilisateur
-- Créée avec Streamlit
-- Démo interactive du projet avec visualisation des résultats
+### API
+- Developped with FastAPI
+- Allows to make live predictions 
 
----
-
-## 🛠️ Technologies utilisées
-
-- Python (pandas, scikit-learn, Flask, Streamlit, etc.)
-- Git & GitHub
-- Jupyter Notebooks
-
----
-
-## 🙋‍♂️ Membres de l'équipe
-
-- [Nom 1 – rôle principal]
-- [Nom 2 – rôle principal]
-- [Toi – modélisation + API, par exemple]
-
----
-
-## 📎 Lien vers l'app (si déployée)
-
-- 🌐 [Lien Streamlit / Render / Vercel / etc.]
-
----
-
-## 📝 Notes complémentaires
-
-- Le projet a été réalisé en [nombre] jours dans un cadre pédagogique avec restitution finale devant un jury.
+### User interface
+- Created with Streamlit
+- Interactive demo of the project available at : https://www.youtube.com/watch?v=YYszg2pyiV4 
