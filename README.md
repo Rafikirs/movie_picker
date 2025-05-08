@@ -42,4 +42,5 @@ For the 2d one, we added the languages and genres.
 
 ### User interface
 - Created with Streamlit
+- Code available seperately in that repo : https://github.com/Rafikirs/mp_website 
 - Interactive demo of the project available at : https://www.youtube.com/watch?v=YYszg2pyiV4 
